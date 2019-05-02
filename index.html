@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Reserve a Tennis Court</title>
+        <link rel=stylesheet href="CSS/normalize.css">
+        <link rel=stylesheet href="CSS/main.css">
+    </head>
+    
+    <body>
+        <div id="web_container">
+                         
+            <header id="header">
+                <h1 id="title">Reserve a Tennis Court</h1>
+            </header>
+            
+            <div id="home_body" class="row">
+                <div id="court_1" class="courts column-left">
+                    <h1>Court 1</h1>
+                    <p>Available</p>
+                    <br>
+                    <p>Reserve Now!</p>
+                    <br>
+                    <p>Enjoy!</p>
+                </div>
+                
+                <div id="court_2" class="courts column-right">
+                    <h1>Court 2</h1>
+                    <p>Available</p>
+                    <br>
+                    <p>Reserve Now!</p>
+                    <br>
+                    <p>Enjoy!</p>
+                </div>
+                
+                <div id="court_3" class="courts column-left">
+                    <h1>Court 3</h1>
+                    <p>Available</p>
+                    <br>
+                    <p>Reserve Now!</p>
+                    <br>
+                    <p>Enjoy!</p>
+                </div>
+                
+                <div id="court_4" class="courts column-right">
+                    <h1>Court 4</h1>
+                    <p>Available</p>
+                    <br>
+                    <p>Reserve Now!</p>
+                    <br>
+                    <p>Enjoy!</p>
+                </div>
+            </div>
+            
+            <div id="court_info">
+                <h1>Reserve your court</h1>
+                <h3>Name: 
+                <input type="text" id="name" name="user_name" maxlength="30" width="20px"></h3>
+                <h3>Time:
+                <br>
+                <input type="radio" id="30min_time_reserved" name="time_reserved_input" value="30 minutes"><label> 30 minutes</label>
+                <br>
+                <input type="radio" id="1hr_time_reserved" name="time_reserved_input" value="1 hour"><label> 1 hour</label>
+                </h3>
+                <br><br>
+                <input id="submitBtn" type="submit" value="Submit">
+            </div>
+        </div>
+        
+        <footer>                  
+            <div class="row">
+                <div class="column-left footer">
+                    <ul class="footer_list">
+                        <li><h3>Contact Information</h3></li>
+                        <li>PHONE: (555) 555-5555</li>
+                        <li>EMAIL: CONTACTUS@NTC.COM</li>
+                        <li>ADDRESS 123 ROAD RD, <br>
+                            MOON, OUTER SPACE</li>
+                    </ul>
+                </div>
+
+                <div  id="subscription" class="column-right">
+                    <form action="index.html" method="post">
+                        <h3>Join Our Community</h3>
+                        <p>Sign up to receive email of our latest information.</p>
+                        <h3>Name: 
+                        <input type="text" id="user_name" ></h3>
+                        <h3>Email: 
+                        <input type="email" id="user_email" ></h3>
+                        <button type="submit" name="Submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer">
+                <small >Copyright &copy; 2019, National Tennis Club</small>
+            </div>
+               
+        </footer>
+        <!-- End of footer -->
+            
+        <script src="JavaScript/app.js"></script>
+    </body>
+</html>

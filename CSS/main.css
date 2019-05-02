@@ -1,0 +1,144 @@
+
+#web_container
+{
+    position: relative;
+    min-height: calc(100vh - 256px);  
+}
+
+/*Start Header section*/
+#header
+{
+    background-color: black;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#title
+{
+    text-align: center;
+    color: #bfdb39;
+    padding: 1em;
+    letter-spacing: 0.15em;
+    font-size: 50px;
+    background-color: transparent;
+    text-shadow: 5px 5px 15px black;
+    font-family: Helvetica;
+}
+
+#home_body, #court_info
+{
+    background-color: black;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 2em;
+    margin-bottom: 2em;  
+}
+
+.courts *, .footer *
+{
+    color: white;
+    padding-bottom: 10px;
+    display: block;
+    text-align: center;
+}
+#court_info
+{
+    color: white;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+.courts
+{
+/*    padding: 1em;*/
+    margin: 0.5em;
+}
+
+.column-left
+{
+  float: left;
+  width: 45%;
+}
+
+.column-right
+{
+  float: right;
+  width: 45%;
+}
+
+.row:after 
+{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#court_info
+{
+    display: none;
+}
+
+/*#court_info p h1 h3   Add Style to this*/
+
+ 
+/*Start Footer section*/
+footer
+{
+    background-color: black;
+    color: white;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 2em;
+    margin-bottom: 2em; 
+}
+
+footer div div
+{
+    padding: 1em;
+    margin: 0.5em;
+}
+
+#subscription *
+{
+/*    background-color: black;*/
+/*    color: white;*/
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 0.75em;
+    margin-bottom: 0.75em; 
+}
+
+button
+{
+    margin-left: 10%;
+}
+
+.footer_list
+{
+    list-style: none;
+    line-height: 2em;
+}
+
+@media screen and (max-width: 1220px) 
+{
+    .courts, .footer, #subscription
+    {
+        width: 98%;
+        float: left;
+    }
+    
+    #subscription h3, #subscription p
+    {
+        text-align: center;
+    }
+    
+    #subscription button
+    {
+        margin-left: 20%;
+    }
+    
+    footer div div
+    {
+        padding: 0px;
+        margin: 0px;
+    }  
+}
