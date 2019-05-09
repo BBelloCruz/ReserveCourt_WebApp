@@ -16,11 +16,15 @@ var CourtClicked;
 var time_selected = document.querySelector('input[name="time_reserved_input"]:checked');
 var user_name = document.querySelector("input[name='user_name']");
 
+//Set all court container to green
 for (var i = 0; i < courts.length; i++) 
     {
         courts[i].style.backgroundColor = "green";
     } 
 
+// reserveCourt function
+/* This function will receive a parameter and use it to decide which container is clicked. It will hide the current content container and open the form container where you will need to type name and select time. After submiting, it will change the color of the clicked court container, add name and time selected.
+*/
 function reserveCourt(event)
 {
     
@@ -48,6 +52,8 @@ function reserveCourt(event)
     
 }
 
+// FormDataHandler
+// This function will take care of the text and color changes.
 function FormDataHandler(event)
 {
     
