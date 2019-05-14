@@ -1,4 +1,9 @@
 
+body 
+{
+    background-color: ;
+}
+
 #web_container
 {
     position: relative;
@@ -141,4 +146,8 @@ button
         padding: 0px;
         margin: 0px;
     }  
+    #title
+    {
+        padding: 0.1em;
+    }
 }

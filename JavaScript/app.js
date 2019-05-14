@@ -16,6 +16,11 @@ var CourtClicked;
 var time_selected = document.querySelector('input[name="time_reserved_input"]:checked');
 var user_name = document.querySelector("input[name='user_name']");
 
+var subscribeBtn = document.getElementById("SubscribeBtn");
+var subscribeName = document.getElementById("SubscribeName");
+var subscribeEmail = document.getElementById("SubscribeEmail");
+
+
 //Set all court container to green
 for (var i = 0; i < courts.length; i++) 
     {
@@ -78,5 +83,13 @@ court_3.addEventListener("click", function() {reserveCourt(event)});
 court_4.addEventListener("click", function() {reserveCourt(event)});
 
 submitBtn.addEventListener("click", function() {FormDataHandler(CourtClicked)});
+
+subscribeBtn.addEventListener("click", function() 
+{
+    if(subscribeName.value == "" && subscribeEmail.value == "")
+    {
+        alert("You have discovered a secret feature");
+    }
+});
 
 //End JavaScript for Court Reserve
